@@ -1,0 +1,22 @@
+/* 全局样式重置 - 统一基础间距和盒模型 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, page {
+  font-family: PingFang SC, Microsoft YaHei, sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+  /* 定义全局间距变量，方便统一调整 */
+  --gap-xs: 4px;
+  --gap-sm: 8px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+}
+
+/* 通用容器 - 统一左右边距 */
+.container {
+  padding: 0 var(--gap-md);
+}
